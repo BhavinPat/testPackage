@@ -20,7 +20,10 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "testPackage",
-            dependencies: [], path: "Sources"),
+            dependencies: [], path: "Sources", resources: [
+                .process("Resources/Media.xcassets"),
+                .process("Resources/testImage1")
+            ]),
         .testTarget(
             name: "testPackageTests",
             dependencies: ["testPackage"]),
