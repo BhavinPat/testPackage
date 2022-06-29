@@ -22,7 +22,7 @@ let package = Package(
             name: "testPackage",
             dependencies: [], path: "Sources", resources: [
                 .process("Resources/Media.xcassets"),
-                .process("Resources/testImage1")
+                .process("Resources/testImage1.png")
             ]),
         .testTarget(
             name: "testPackageTests",
